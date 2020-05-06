@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="jumbotron mt-5">
+    <div class="col-sm-8 mx-auto">
+      <h1 class="text-center"></h1>
+      <h1>File upload</h1>
+      <img [src] = "url" width = "100" height = "100" alt = "">
+      <input type = "file" (change)="onFileSelected($event)">
+      <button type="button" (click)="onDownload()" >Download Log</button>
+    </div>
+  </div>
+</div>
