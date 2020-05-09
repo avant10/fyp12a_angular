@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent {
   url = 'https://nationalinterest.org/sites/default/files/main_images/M9-pistolet%20%281%29.jpg'
+  url1 = ''
   selectedFile: File = null;
   constructor(private http: HttpClient){}
   onFileSelected(event) {
@@ -21,9 +22,9 @@ export class HomeComponent {
     }
 
   }
-  onDownload(){
 
 
+  onDetect(){
 
   }
 

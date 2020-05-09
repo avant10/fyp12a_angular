@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 //import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { LogComponent } from './log/log.component';
 import {WebCamComponent} from './webcam/webcam.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +19,7 @@ import { WebcamModule} from 'ngx-webcam';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'webcam', component: WebCamComponent },
+  { path: 'log', component: LogComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   /* {
@@ -29,6 +31,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
+    LogComponent,
     AppComponent,
     WebCamComponent,
     LoginComponent,
